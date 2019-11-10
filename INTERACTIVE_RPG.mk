@@ -1,0 +1,132 @@
+##
+## Auto Generated makefile by CodeLite IDE
+## any manual changes will be erased      
+##
+## Debug
+ProjectName            :=INTERACTIVE_RPG
+ConfigurationName      :=Debug
+WorkspacePath          :=/home/mantas/Documents/CPP_workspace
+ProjectPath            :=/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG
+IntermediateDirectory  :=$(ConfigurationName)
+OutDir                 := $(IntermediateDirectory)
+CurrentFileName        :=
+CurrentFilePath        :=
+CurrentFileFullPath    :=
+User                   :=Mantas
+Date                   :=10/11/19
+CodeLitePath           :=/home/mantas/.codelite
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+ObjectSuffix           :=.o
+DependSuffix           :=.o.d
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
+IncludeSwitch          :=-I
+LibrarySwitch          :=-l
+OutputSwitch           :=-o 
+LibraryPathSwitch      :=-L
+PreprocessorSwitch     :=-D
+SourceSwitch           :=-c 
+OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
+Preprocessors          :=
+ObjectSwitch           :=-o 
+ArchiveOutputSwitch    := 
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :="INTERACTIVE_RPG.txt"
+PCHCompileFlags        :=
+MakeDirCommand         :=mkdir -p
+LinkOptions            :=  
+IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
+IncludePCH             := 
+RcIncludePath          := 
+Libs                   := 
+ArLibs                 :=  
+LibPath                := $(LibraryPathSwitch). 
+
+##
+## Common variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
+##
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
+CXXFLAGS := -std=c++17 -Wall -g -O0 -Wall $(Preprocessors)
+CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := /usr/bin/as
+
+
+##
+## User defined environment variables
+##
+CodeLiteDir:=/usr/share/codelite
+Objects0=$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
+
+##
+## Main Build Targets 
+##
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
+all: $(OutputFile)
+
+$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
+	@$(MakeDirCommand) $(@D)
+	@echo "" > $(IntermediateDirectory)/.d
+	@echo $(Objects0)  > $(ObjectsFileList)
+	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+MakeIntermediateDirs:
+	@test -d $(ConfigurationName) || $(MakeDirCommand) $(ConfigurationName)
+
+
+$(IntermediateDirectory)/.d:
+	@test -d $(ConfigurationName) || $(MakeDirCommand) $(ConfigurationName)
+
+PreBuild:
+
+
+##
+## Objects
+##
+$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix): src/Player/Player.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_Player_Player.cpp$(DependSuffix) -MM src/Player/Player.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/Player/Player.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_Player_Player.cpp$(PreprocessSuffix): src/Player/Player.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Player_Player.cpp$(PreprocessSuffix) src/Player/Player.cpp
+
+$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix): src/Gameplay/Gameplay.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(DependSuffix) -MM src/Gameplay/Gameplay.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/Gameplay/Gameplay.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(PreprocessSuffix): src/Gameplay/Gameplay.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(PreprocessSuffix) src/Gameplay/Gameplay.cpp
+
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix): src/functions/Async/Async.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_functions_Async_Async.cpp$(DependSuffix) -MM src/functions/Async/Async.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/functions/Async/Async.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_functions_Async_Async.cpp$(PreprocessSuffix): src/functions/Async/Async.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_functions_Async_Async.cpp$(PreprocessSuffix) src/functions/Async/Async.cpp
+
+$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix): src/functions/String/String.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_functions_String_String.cpp$(DependSuffix) -MM src/functions/String/String.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/functions/String/String.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_functions_String_String.cpp$(PreprocessSuffix): src/functions/String/String.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_functions_String_String.cpp$(PreprocessSuffix) src/functions/String/String.cpp
+
+
+-include $(IntermediateDirectory)/*$(DependSuffix)
+##
+## Clean
+##
+clean:
+	$(RM) -r $(ConfigurationName)/
+
+
