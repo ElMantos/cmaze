@@ -112,8 +112,8 @@
         <File Name="src/functions/Async/Async.h"/>
       </VirtualDirectory>
       <VirtualDirectory Name="String">
-        <File Name="src/functions/String/String.cpp"/>
-        <File Name="src/functions/String/String.h"/>
+        <File Name="src/functions/String/xString.cpp"/>
+        <File Name="src/functions/String/xString.h"/>
       </VirtualDirectory>
     </VirtualDirectory>
     <File Name="main.cpp"/>

@@ -43,7 +43,6 @@ void Gameplay::move(int horizontal, int vertical)
 
 
     if(map_coordinate == 'o') {
-        this->map[next_move_horizontal][next_move_vertical] = this->empty_space;
         map_coordinate = this->empty_space;
         this->player->add_coins(1);
     }
@@ -64,9 +63,9 @@ void Gameplay::loop()
 {
     this->player = new Player;
 
-    String::print("Welcome to The Maze!");
-    String::print("Your goal is to reach the end of the maze!");
-    String::print("(it's marked as E)");
+    xString::print("Welcome to The Maze!");
+    xString::print("Your goal is to reach the end of the maze!");
+    xString::print("(it's marked as E)");
 
     sleep(1);
     char action;
@@ -102,20 +101,20 @@ void Gameplay::loop()
 
 void Gameplay::print_success()
 {
-    String::print("Success!");
-    String::print("You have reached the end of the maze!");
+    xString::print("Success!");
+    xString::print("You have reached the end of the maze!");
 }
 
 void Gameplay::print_map()
 {
     for(int i = 0; i <= 26; i++) {
-        String::print(this->map[i]);
+        xString::print(this->map[i]);
     }
 }
 
 void Gameplay::print_hud()
 {
-    String::print("________________");
+    xString::print("________________");
     std::cout << "| Health: " << this->player->get_health() << std::endl;
     std::cout << "| Coins: " << this->player->get_coins() << std::endl;
     std::cout << "| Exp: " << this->player->get_exp() << std::endl;
@@ -124,13 +123,13 @@ void Gameplay::print_hud()
 void Gameplay::print_end_game_text()
 {
     if(this->is_game_won) {
-        String::print("You found the exit!");
-        String::print("Good job!");
+        xString::print("You found the exit!");
+        xString::print("Good job!");
     }
 
     if(!this->player->is_alive()) {
-        String::print("You are dead!");
-        String::print("Be more carefull next time!");
+        xString::print("You are dead!");
+        xString::print("Be more carefull next time!");
     }
 }
 
