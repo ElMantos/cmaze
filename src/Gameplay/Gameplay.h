@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "src/functions/String/String.h"
+#include "src/functions/String/xString.h"
 #include "src/functions/Async/Async.h"
 #include "src/Player/Player.h"
 

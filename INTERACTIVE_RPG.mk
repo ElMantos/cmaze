@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=INTERACTIVE_RPG
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/mantas/Documents/CPP_workspace
-ProjectPath            :=/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG
+WorkspacePath          :=/Users/mantasginiunas/Documents/Studies/cpp/VIKO
+ProjectPath            :=/Users/mantasginiunas/Documents/Studies/cpp/cmaze
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Mantas
-Date                   :=10/11/19
-CodeLitePath           :=/home/mantas/.codelite
+User                   :=Mantas Giniunas
+Date                   :=25/11/2019
+CodeLitePath           :="/Users/mantasginiunas/Library/Application Support/CodeLite"
 LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -59,8 +59,8 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) 
+CodeLiteDir:=/private/var/folders/5k/r4gt56qd5k59c1lryyxj2w840000gn/T/AppTranslocation/60664A1F-DDD4-40A7-85AB-06A1FC093027/d/codelite.app/Contents/SharedSupport/
+Objects0=$(IntermediateDirectory)/src_functions_String_xString.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) 
 
 
 
@@ -91,35 +91,35 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/src_functions_String_xString.cpp$(ObjectSuffix): src/functions/String/xString.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_functions_String_xString.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_functions_String_xString.cpp$(DependSuffix) -MM src/functions/String/xString.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mantasginiunas/Documents/Studies/cpp/cmaze/src/functions/String/xString.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_String_xString.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/src_functions_String_xString.cpp$(PreprocessSuffix): src/functions/String/xString.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_functions_String_xString.cpp$(PreprocessSuffix) src/functions/String/xString.cpp
+
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mantasginiunas/Documents/Studies/cpp/cmaze/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
 $(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix): src/Player/Player.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_Player_Player.cpp$(DependSuffix) -MM src/Player/Player.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/Player/Player.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mantasginiunas/Documents/Studies/cpp/cmaze/src/Player/Player.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Player_Player.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/src_Player_Player.cpp$(PreprocessSuffix): src/Player/Player.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Player_Player.cpp$(PreprocessSuffix) src/Player/Player.cpp
 
 $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix): src/Gameplay/Gameplay.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(DependSuffix) -MM src/Gameplay/Gameplay.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/Gameplay/Gameplay.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mantasginiunas/Documents/Studies/cpp/cmaze/src/Gameplay/Gameplay.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(PreprocessSuffix): src/Gameplay/Gameplay.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_Gameplay_Gameplay.cpp$(PreprocessSuffix) src/Gameplay/Gameplay.cpp
 
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
-
 $(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix): src/functions/Async/Async.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_functions_Async_Async.cpp$(DependSuffix) -MM src/functions/Async/Async.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/functions/Async/Async.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mantasginiunas/Documents/Studies/cpp/cmaze/src/functions/Async/Async.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_Async_Async.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/src_functions_Async_Async.cpp$(PreprocessSuffix): src/functions/Async/Async.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_functions_Async_Async.cpp$(PreprocessSuffix) src/functions/Async/Async.cpp
-
-$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix): src/functions/String/String.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/src_functions_String_String.cpp$(DependSuffix) -MM src/functions/String/String.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/mantas/Documents/CPP_workspace/INTERACTIVE_RPG/src/functions/String/String.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/src_functions_String_String.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/src_functions_String_String.cpp$(PreprocessSuffix): src/functions/String/String.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/src_functions_String_String.cpp$(PreprocessSuffix) src/functions/String/String.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
